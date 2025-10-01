@@ -3,3 +3,4 @@ snowflake-snowpark-python
 streamlit
 requests
 pandas
+pip install snowflake-snowpark-python
