@@ -64,3 +64,8 @@ if ingredients_list:
             (og_dataset['ORDER_UID'] == edited_dataset['ORDER_UID']),
             [when_matched().update({'order_filled': edited_dataset['order_filled']})]
         )
+
+# New section to display smoothiefroot nutrition information
+import requests
+smoothiefroot_response = requests.get("https://my.smooothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_response)
